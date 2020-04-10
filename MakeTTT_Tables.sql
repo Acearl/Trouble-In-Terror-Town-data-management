@@ -40,7 +40,7 @@ CREATE TABLE Roll_Changes(
 CREATE TABLE Menu_Buys(
 	round_ID int not null REFERENCES Rounds(round_ID),
 	steam_ID decimal not null REFERENCES Players(steam_ID),
-	item_ID int not null REFERENCES Items(item_ID),
+	item_Name nvarchar(50) not null,
 	Time_in_Round time not null
 );
 CREATE TABLE Deaths(
